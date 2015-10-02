@@ -21,7 +21,7 @@ public class Renderer implements GLSurfaceView.Renderer{
     @Override
     public void onSurfaceCreated(GL10 gl10, EGLConfig eglConfig) {
         // Set background color and enable depth testing
-        GLES20.glClearColor(1f, 1f, 1f, 1.0f);
+        GLES20.glClearColor(0f, 0f, 0f, 1.0f);
         GLES20.glEnable(GLES20.GL_DEPTH_TEST);
         mCube = new Cube();
     }
